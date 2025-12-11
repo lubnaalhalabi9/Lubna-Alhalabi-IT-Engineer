@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light: #fbeef5;
+  --color-pink: #f0cdcc;
+  --color-purple: #8d5499;
+  --color-purple2: #52215c;
+  --color-purple3: #533159;
+  --color-dark-purple: #2a1a38;
+  --color-blue: #1453a2;
+  --color-blue2: #0f407d;
+  --color-dark-blue: #1f1a38;
+  --color-black: #000000;
+  --color-test: #5c2156;
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background: linear-gradient(to bottom, var(--color-dark-purple), var(--color-dark-blue));
+  color: var(--color-light);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+        
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+@keyframes titleSlideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes titleSlideOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(80px) rotate(360deg);
+  }
+}
+
+@keyframes orbit-slow {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 15s linear infinite;
+}
+
+.animate-orbit-slow {
+  animation: orbit-slow 25s linear infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeInUp.delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.animate-fadeInUp.delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.glow-effect {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(141, 84, 153, 0.15),
+    transparent 40%
+  );
+}
+
+.animate-titleSlideIn {
+    animation: titleSlideIn 2.5s ease-in-out infinite;
+}
+
+.animate-titleSlideOut {
+    animation: titleSlideOut 2.5s ease-in-out infinite;
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 3s ease;
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1800px;
+    }
+    
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    .text-4xl {
+        font-size: 3.5rem;
+    }
+    
+    .text-3xl {
+        font-size: 2.75rem;
+    }
+    
+    .text-xl {
+        font-size: 1.5rem;
+    }
+    
+    .text-lg {
+        font-size: 1.25rem;
+    }
+    
+    section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2400px;
+    }
+    
+    h1 {
+        font-size: 8rem;
+    }
+    
+    h2 {
+        font-size: 5rem;
+    }
+    
+    section {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+}
