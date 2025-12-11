@@ -111,7 +111,7 @@ const ContactSection = () => {
             type: "tel",
             name: "phone",
             label: "Phone Number",
-            placeholder: "+963 953 284 792",
+            placeholder: "+999 999 999",
             required: false,
             icon: Phone,
             animation: "fade-right",
