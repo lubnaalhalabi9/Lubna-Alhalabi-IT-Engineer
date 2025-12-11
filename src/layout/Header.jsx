@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, User, Code, Briefcase, Sparkles } from 'lucide-react';
-import logo from '../assets/light.svg';
+import logo from '/assets/light.svg';
 import Buttons from '../components/Buttons'
 
 const MAIN_LINKS = [

@@ -16,6 +16,10 @@
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
+.container{
+  max-width: 90%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -186,16 +190,15 @@ body {
 }
 
 @media (min-width: 1920px) {
-    .container {
-        max-width: 1800px;
-    }
-    
+  .container{
+    max-width: 95%;
+  }
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     
     .text-4xl {
@@ -221,10 +224,6 @@ body {
 }
 
 @media (min-width: 2560px) {
-    .container {
-        max-width: 2400px;
-    }
-    
     h1 {
         font-size: 8rem;
     }

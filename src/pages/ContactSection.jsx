@@ -48,7 +48,7 @@ const ContactSection = () => {
 
     const CONTACT_INFO = [
         {
-            image: "./src/assets/icons/Mail.png",
+            image: "/assets/Mail.png",
             title: "Email Address",
             value: "lubnaalhalabi5@gmail.com",
             link: "mailto:lubnaalhalabi5@gmail.com",
@@ -56,7 +56,7 @@ const ContactSection = () => {
             delay: "100"
         },
         {
-            image: "./src/assets/icons/Location.png",
+            image: "/assets/Location.png",
             title: "Location",
             value: "Al-Sweida, Syria",
             link: "https://maps.google.com/?q=Al-Sweida,Syria",
@@ -64,7 +64,7 @@ const ContactSection = () => {
             delay: "200"
         },
         {
-            image: "./src/assets/icons/Phone.png",
+            image: "/assets/Phone.png",
             title: "Phone Number",
             value: "+963 953 284 792",
             link: "tel:+963953284792",

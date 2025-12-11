@@ -45,12 +45,12 @@ const HeroSection = () => {
                    
                     <div className="mb-8 2xl:mb-16">
                         <p className="text-pink font-mono text-lg 2xl:text-2xl mb-2">Hello, I'm</p>
-                        <h1 className="text-4xl md:text-8xl 2xl:text-9xl font-bold text-white mb-4 animate-fadeInUp">
+                        <h1 className="text-4xl md:text-7xl 2xl:text-8xl font-bold text-white mb-4 animate-fadeInUp">
                             Lubna Alhalabi
                         </h1>
                     </div>
                     
-                    <div className="h-24 2xl:h-32 mb-8 2xl:mb-16 flex items-center justify-center">
+                    <div className="h-24 2xl:h-30 mb-8 2xl:mb-12 flex items-center justify-center">
                         <div className="relative h-24 2xl:h-32 w-full">
                             {titles.map((title, index) => (
                                 <h2 
