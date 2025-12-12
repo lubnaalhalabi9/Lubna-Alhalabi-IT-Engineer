@@ -2,7 +2,7 @@ import SocialIcons from "../components/SocialIcons";
 
 const Footer = () => {
     return (
-        <footer className="bg-dark-purple text-white py-9 2xl:py-12 2xl:mt-60 border-t border-purple/20">
+        <footer className="bg-dark-purple text-white py-9 2xl:py-12  border-t border-purple/20">
             <div className="container mx-auto px-4 2xl:px-8 relative">
                 <div className="flex justify-center mb-4 2xl:mb-6">
                     <SocialIcons />
